@@ -33,6 +33,8 @@ export default {
     border-bottom:1px solid black;
     margin:0 auto;
     display:flex;
+    justify-content:center;
+    
     padding:.3rem;
     
 
@@ -41,11 +43,8 @@ export default {
     display: flex;
     width:100%;
     justify-content: space-around;
-    
-    
-
         img {
-            padding:.5rem;
+            padding:.4rem;
             margin-left:10%;
         }
         
@@ -66,16 +65,13 @@ export default {
         font-weight:700;
         margin-right:1rem;
         }
-        a:active, a.active{
+        a:active, a.active, a:hover{
         color:cornflowerblue;
         border-bottom:5px solid cornflowerblue;
-        padding-bottom:66%;
-        
-        
+        padding-bottom:37px;
         }
-        a:hover{
+        a:focus{
             color:cornflowerblue;
-
         }
     }
 } 
