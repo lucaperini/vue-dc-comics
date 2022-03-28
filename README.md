@@ -1,5 +1,5 @@
 # vue-dc-comics
-
+Esercitazione 28 marzo classe #55
 ## Project setup
 ```
 npm install
