@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="container relative">
         <div class="section-footer-social">
             <div>
                 <a href="" class="sign-up-btn">Sign Up Now!</a>
@@ -73,7 +73,7 @@ h4{
         text-transform: uppercase;
         vertical-align: middle;
         line-height:6rem;
-        margin-left:110px;
+        
         
     }
 }
@@ -83,7 +83,6 @@ h4{
 }
 
 .social {
-    
     width:100%;
 }
 .title {
@@ -93,7 +92,4 @@ h4{
     color:rgb(59, 116, 232);
     font-size:1rem;
 }
-.relative{
-    position:relative;
-    }
 </style>

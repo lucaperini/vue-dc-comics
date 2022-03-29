@@ -1,8 +1,7 @@
 <template>
-    <div class="relative">
-        <div class=container>
-            
-                <div class="services-item">
+    <div class="relative ">
+        <div class="comics-link container">
+            <div class="services-item">
                 <img src="../assets/images/buy-comics-digital-comics.png" alt="">
                 <p>Digital Comics</p>
                 </div> 
@@ -21,8 +20,7 @@
                 <div class="services-item">
                 <img src="../assets/images/buy-dc-power-visa.svg" alt="">
                 <p>DC Power Visa</p>
-                </div>
-            
+            </div>
         </div>
     </div>
 </template>
@@ -34,14 +32,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+
+.comics-link {
     display:flex;
-    align-items:center;
     justify-content:center;
-    background-color: cornflowerblue;
-    height:150px;
+    background-color: rgb(56, 128, 241);
+    height:16vh;
     width:100vw;
-    
 }
 
 .services-item {
@@ -51,21 +48,19 @@ export default {
     width:14%;
     margin:0;
     
-    
     img {
         width: 30%;
         display: inline-block;
         padding:.5rem;
     }
+    
     p {
         color:white;
         text-transform:uppercase;
         font-weight:700;
-        font-size:.8rem;
+        font-size:.7rem;
     }
 }
-.items{
-    margin-left:50px;
-}
+
 
 </style>

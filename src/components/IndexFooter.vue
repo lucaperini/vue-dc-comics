@@ -1,16 +1,15 @@
 <template>
 <div>
-    <footer>
+    <footer class="container">
         <div class="footer-top">
             <nav>
                 <ul>
                     <h4>Dc Comics </h4>
                     <li v-for="(element, index) in footerNavComics" :key="index"><a href="element.url">{{ element.text }}</a></li>
-                        <ul> 
-                            <h4>Shop </h4>
-                            <li v-for="(element, index) in footerNavShop" :key="index"><a href="element.url">{{ element.text }}</a></li>
-                            
-                        </ul>
+                    <ul> 
+                        <h4>Shop </h4>
+                        <li v-for="(element, index) in footerNavShop" :key="index"><a href="element.url">{{ element.text }}</a></li>
+                    </ul>
                 </ul>
                 <ul>
                     <h4>Dc</h4>
@@ -23,19 +22,23 @@
                     
                 </ul>
                 <div>
-                    <img src="../assets/images/dc-logo-bg.png" alt="">
+                    <img class="dc-logo" src="../assets/images/dc-logo-bg.png" alt="">
                 </div>
             </nav>  
-            <!-- <div class="footer-bottom"></div> -->
         </div>
-        
     </footer>
+    <IndexFooterSocial />
 </div>
 </template>
 
 <script>
+import IndexFooterSocial from './IndexFooterSocial.vue'
+
 export default {
     name:'IndexFooter',
+    components: {
+        IndexFooterSocial,
+    },
     data: function() {
         return {
             footerNavComics: [
@@ -191,8 +194,9 @@ footer {
     
     nav {
         display: flex;
-        flex-basis:40%;
-        margin-left:200px;
+        flex-basis:100%;
+        justify-content:space-around;
+        margin-left:120px;
         
         
         ul{
@@ -216,12 +220,11 @@ footer {
         }
     }
     
-    img {
-    width:85%;
-    margin-top: -100px;
-    margin-left:30px;
-    z-index:10;
+    .dc-logo {
+        width:90%;
+        margin-top: -100px;
+        padding-left:180px;
+        z-index:6;
     }
 }
-
 </style>

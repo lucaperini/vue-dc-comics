@@ -76,9 +76,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    width:100vw;
+    width:75%;
     height: 100px;
-    border-bottom:1px solid black;
     margin:0 auto;
     display:flex;
     justify-content:center;
@@ -90,7 +89,7 @@ export default {
     justify-content: space-around;
         img {
             padding:.4rem;
-            margin-left:10%;
+        
         }
         
         ul {
@@ -105,7 +104,7 @@ export default {
         a {
         text-decoration: none;
         text-transform:uppercase;
-        color:gray;
+        color:darkslategrey;
         font-size: .7rem;
         font-weight:700;
         margin-right:1rem;
@@ -113,7 +112,7 @@ export default {
         a:active, a.active, a:hover{
         color:cornflowerblue;
         border-bottom:5px solid cornflowerblue;
-        padding-bottom:37px;
+        padding-bottom:40px;
         }
         a:focus{
             color:cornflowerblue;

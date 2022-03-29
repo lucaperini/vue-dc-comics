@@ -3,26 +3,30 @@
         <div class="jumbotron">
         <h3>current series</h3>
         </div>
-        <div class="container">
-            <div class="comic-list">
-            <IndexMainComics 
-                v-for="(comic, index) in comics"
-                :key="index"
-                :comicObject="comic"
-            />
+        <div class="comic-list">
+            <div class="container main-comics">
+                <div class="comic-list">
+                    <IndexMainComics 
+                    v-for="(comic, index) in comics"
+                    :key="index"
+                    :comicObject="comic"
+                    />
+                </div>
             </div>
         </div>
+        <IndexServices />
     </div>
-        
 </template>
 
 <script>
 import IndexMainComics from './IndexMainComics.vue'
+import IndexServices from './IndexServices.vue'
 
 export default {
     name: 'IndexMain',
     components: {
         IndexMainComics,
+        IndexServices,
     },
     data: function() {
     return {
@@ -107,16 +111,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-    padding-top:4rem;
+.comic-list {
+    width:100%;
+    background-color: rgb(28, 28, 28);
+    
+    .main-comics {
+    padding-top:2rem;
     padding-bottom:2rem;
-    padding-left:2rem;
     display:flex;
-    background-color:black;
+    background-color:rgb(28, 28, 28);
     color:white;
     font-size:.8rem;
     font-weight:700;
-    width:100vw;
+    }
     
     h5{
         font-size:.8rem;
@@ -136,17 +143,11 @@ export default {
         font-size: 1rem;
         font-weight:700;
         padding:.6rem;
-        background-color: cornflowerblue;
+        background-color:rgb(56, 128, 241);
         position:absolute;
-        top:50%;
-        left:20%;
+        top:41%;
+        left:16%;
+        
     }
-    
-    .comic-list {
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-    }
-    
 }
 </style>
