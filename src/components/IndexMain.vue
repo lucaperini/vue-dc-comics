@@ -1,5 +1,8 @@
 <template>
     <div class="relative">
+        <div class="jumbotron">
+        <h3>current series</h3>
+        </div>
         <div class="container">
             <h2> --Content goes here!--</h2>
         </div>
@@ -33,6 +36,26 @@ export default {
         
         
     }
+}
+
+.jumbotron{
+    width:100%;
+    height:400px;
+    background-image: url('../assets/images/jumbotron.jpg');
+    background-size: cover;
+
+    h3{
+        text-transform:uppercase;
+        color:white;
+        font-size: 1rem;
+        font-weight:700;
+        padding:.8rem;
+        background-color: cornflowerblue;
+        position:absolute;
+        top:75%;
+        left:20%;
+    }
+    
 }
 
 </style>
