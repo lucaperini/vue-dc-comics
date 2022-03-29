@@ -82,11 +82,8 @@ export default {
     margin:0 auto;
     display:flex;
     justify-content:center;
-    
     padding:.3rem;
-    
-
-    }
+}
 .header-content { 
     display: flex;
     width:100%;
