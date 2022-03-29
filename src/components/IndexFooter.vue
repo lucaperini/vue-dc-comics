@@ -5,40 +5,22 @@
             <nav>
                 <ul>
                     <h4>Dc Comics </h4>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
-                    <li ><a class="active" href="">Movies</a></li>
-                    <li><a href="">Tv</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Collectibles</a></li>
-                    <li><a href="">videos</a></li>
-                <ul> 
-                    <h4>Shop </h4>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
-                </ul>
+                    <li v-for="(element, index) in footerNavComics" :key="index"><a href="element.url">{{ element.text }}</a></li>
+                        <ul> 
+                            <h4>Shop </h4>
+                            <li v-for="(element, index) in footerNavShop" :key="index"><a href="element.url">{{ element.text }}</a></li>
+                            
+                        </ul>
                 </ul>
                 <ul>
                     <h4>Dc</h4>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
-                    <li ><a class="active" href="">Movies</a></li>
-                    <li><a href="">Tv</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Collectibles</a></li>
-                    <li><a href="">videos</a></li>
-                    <li><a href="">Fans</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Shop</a></li>
+                    <li v-for="(element, index) in footerNavDC" :key="index"><a href="element.url">{{ element.text }}</a></li>
+                    
                 </ul>
                 <ul>
                     <h4>Sites</h4>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
-                    <li ><a class="active" href="">Movies</a></li>
-                    <li><a href="">Tv</a></li>
-                    <li><a href="">Games</a></li>
+                    <li v-for="(element, index) in footerNavSites" :key="index"><a href="element.url">{{ element.text }}</a></li>
+                    
                 </ul>
                 <div>
                     <img src="../assets/images/dc-logo-bg.png" alt="">
@@ -53,7 +35,144 @@
 
 <script>
 export default {
-    name:'IndexFooter'
+    name:'IndexFooter',
+    data: function() {
+        return {
+            footerNavComics: [
+                {
+                    text: "Characters",
+                    url:"#",
+
+                },
+                {
+                    text:"Comics",
+                    url:"#",
+
+                },
+                {
+                    text: "Movies",
+                    url: "#",
+
+                },
+                {
+                    text: "TV",
+                    url: "#",
+
+                },
+                {
+                    text: "Games",
+                    url: "#",
+
+                },
+                {
+                    text: "Videos",
+                    url: "#",
+
+                },
+                {
+                    text:"News",
+                    url: "#",
+
+                }, 
+            ],
+            footerNavShop: [
+                {
+                    text: "Shop DC",
+                    url:"#",
+
+                },
+                {
+                    text:"Shop DC Collectibles",
+                    url:"#",
+
+                },
+            ],
+            footerNavDC: [
+                {
+                    text: "Terms Of Use",
+                    url:"#",
+
+                },
+                {
+                    text:"Privacy Policy (New)",
+                    url:"#",
+
+                },
+                {
+                    text: "Add Choices",
+                    url: "#",
+
+                },
+                {
+                    text: "Advertising",
+                    url: "#",
+
+                },
+                {
+                    text: "Jobs",
+                    url: "#",
+
+                },
+                {
+                    text: "Subscriptions",
+                    url: "#",
+
+                },
+                {
+                    text:"Talent Workshop",
+                    url: "#",
+
+                }, 
+                {
+                    text: "CPSC Certificates",
+                    url: "#",
+
+                },
+                {
+                    text: "Ratings",
+                    url: "#",
+
+                },
+                {
+                    text: "Shop Help",
+                    url: "#",
+
+                },
+                {
+                    text:"Contact Us",
+                    url: "#",
+
+                }, 
+            ],
+            footerNavSites: [
+                {
+                    text: "DC",
+                    url:"#",
+
+                },
+                {
+                    text:"MAD Magazine",
+                    url:"#",
+
+                },
+                {
+                    text: "DC Kids",
+                    url:"#",
+
+                },
+                {
+                    text:"DC Universe",
+                    url:"#",
+
+                },
+                {
+                    text:"DC Power Visa",
+                    url:"#",
+
+                },
+            ],
+        }
+    }
 
 }
 </script>
@@ -79,13 +198,13 @@ footer {
         ul{
             list-style-type: none;
             text-align:left;
-            margin-right:2.5rem;
+            margin-right:1rem;
             
         }
         a {
             text-decoration:none;
             color: lightgray;
-            font-size:.8rem;
+            font-size:.6rem;
         }
         h4 {
             color:white;

@@ -1,19 +1,11 @@
 <template>
     <div class="container">
         <div class="header-content">
-            <img src="../assets/images/dc-logo.png" alt="">
+            <img src="../assets/images/dc-logo.png" alt="dc logo">
             <nav>
                 <ul>
-                    <li><a href="">Characters</a></li>
-                    <li><a href="">Comics</a></li>
-                    <li ><a class="active" href="">Movies</a></li>
-                    <li><a href="">Tv</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Collectibles</a></li>
-                    <li><a href="">videos</a></li>
-                    <li><a href="">Fans</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Shop</a></li>
+                    <li v-for="(element, index) in headerNav" :key="index" :class="{active : element.current}"><a :href="element.url">{{ element.text }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -23,6 +15,62 @@
 <script>
 export default {
     name: 'IndexHeader',
+    data: function() {
+        return {
+            headerNav: [
+                {
+                    text: "Characters",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Comics",
+                    url: "",
+                    current: false
+                },
+                {
+                    text: "Movies",
+                    url: "",
+                    current: true,
+                },
+                {
+                    text: "Tv",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Games",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Collectibles",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Videos",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Fans",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "News",
+                    url: "",
+                    current: false,
+                },
+                {
+                    text: "Shop",
+                    url: "",
+                    current: false,
+                }
+            ]
+        }
+    }
 }
 </script>
 

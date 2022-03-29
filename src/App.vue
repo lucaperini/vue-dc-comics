@@ -2,6 +2,7 @@
   <div id="app">
     <IndexHeader />
     <IndexMain />
+    <IndexServices />
     <IndexFooter />
     <IndexFooterSocial />
   </div>
@@ -10,14 +11,17 @@
 <script>
 import IndexHeader from './components/IndexHeader.vue'
 import IndexMain from './components/IndexMain.vue'
+import IndexServices from './components/IndexServices.vue'
 import IndexFooter from './components/IndexFooter.vue'
 import IndexFooterSocial from './components/IndexFooterSocial.vue'
+
 
 export default {
   name: 'App',
   components: {
     IndexHeader,
     IndexMain,
+    IndexServices,
     IndexFooter,
     IndexFooterSocial,
   }
