@@ -59,6 +59,7 @@ h4{
     width:100%;                                 
     display:flex;
     justify-content:space-around;
+    align-items:center;
     
     h4 {
         display:inline-block;
