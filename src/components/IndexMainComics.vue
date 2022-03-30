@@ -1,7 +1,12 @@
 <template>
     <div class="comic-element">
-        <img :src="comicObject.thumb" :alt="comicObject.series">
-        <h4>{{comicObject.series}}</h4>
+        <div>
+            <img :src="comicObject.thumb" :alt="comicObject.series">
+        </div>
+        
+        <div class="comic-title">
+            <h4>{{comicObject.series}}</h4>
+        </div>
     </div>
 </template>
 
@@ -13,11 +18,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .comic-element {
     width:calc((100% / 6) - 1rem);
     display:inline-block;
     padding-bottom:1rem;
     text-align:left;
+    align-items:center;
         
     img {
         width: 120px;
@@ -32,5 +39,10 @@ export default {
         text-transform:uppercase;
         vertical-align: middle;
         }
+    
+    .comic-title {
+        display:flex;
+        align-self: flex-end;
+    }
 }
 </style>

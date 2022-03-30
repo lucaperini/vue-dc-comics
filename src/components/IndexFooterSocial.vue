@@ -17,7 +17,6 @@
                 </div>
             </div>
         </div>
-    
 </template>
 
 <script>
@@ -27,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
+
 .container {
     display:flex;
     align-items:center;
@@ -53,7 +54,7 @@ h4{
 }
 .section-footer-social{
     
-    background-color:rgb(48, 48, 48);
+    background-color:$bgDarkColor;
     height:100px;
     width:100%;                                 
     display:flex;
@@ -63,7 +64,7 @@ h4{
         display:inline-block;
     }
     .sign-up-btn{
-        color:rgb(59, 116, 232);
+        color:$primaryColor;
         font-size:1rem;
         font-weight:700;
         padding:.8rem;
@@ -78,10 +79,6 @@ h4{
     }
 }
 
-.prova{
-    margin-top:2rem;
-}
-
 .social {
     width:100%;
 }
@@ -89,7 +86,7 @@ h4{
     float:left;
     margin-right:1.5rem;
     text-transform:uppercase;
-    color:rgb(59, 116, 232);
+    color: $primaryColor;
     font-size:1rem;
 }
 </style>

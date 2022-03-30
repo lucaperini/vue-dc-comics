@@ -32,11 +32,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
 
 .comics-link {
     display:flex;
     justify-content:center;
-    background-color: rgb(56, 128, 241);
+    background-color:$primaryColor;
     height:16vh;
     width:100vw;
 }
@@ -45,13 +46,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content:center;
-    width:14%;
+    width: calc((75% / 5) - 1.2rem);
     margin:0;
     
     img {
-        width: 30%;
+        width: 28%;
         display: inline-block;
-        padding:.5rem;
+        padding: .7rem;
     }
     
     p {
@@ -61,6 +62,4 @@ export default {
         font-size:.7rem;
     }
 }
-
-
 </style>

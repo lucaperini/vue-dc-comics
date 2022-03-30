@@ -111,15 +111,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
+
 .comic-list {
     width:100%;
-    background-color: rgb(28, 28, 28);
+    background-color: $bgDarkColor;
     
     .main-comics {
-    padding-top:2rem;
+    padding-top:2.5rem;
     padding-bottom:2rem;
+    padding-left: 1.5rem;
     display:flex;
-    background-color:rgb(28, 28, 28);
+    
+    background-color: $bgDarkColor;
     color:white;
     font-size:.8rem;
     font-weight:700;
@@ -143,11 +147,10 @@ export default {
         font-size: 1rem;
         font-weight:700;
         padding:.6rem;
-        background-color:rgb(56, 128, 241);
+        background-color: $primaryColor;
         position:absolute;
         top:41%;
         left:16%;
-        
-    }
+        }
 }
 </style>

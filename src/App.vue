@@ -2,9 +2,7 @@
   <div id="app">
     <IndexHeader />
     <IndexMain />
-    <IndexServices />
     <IndexFooter />
-    <IndexFooterSocial />
   </div>
 </template>
 

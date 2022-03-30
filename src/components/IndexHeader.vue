@@ -75,6 +75,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/partials/_variables.scss";
+
 .container {
     width:75%;
     height: 100px;
@@ -89,7 +91,6 @@ export default {
     justify-content: space-around;
         img {
             padding:.4rem;
-        
         }
         
         ul {
@@ -104,18 +105,18 @@ export default {
         a {
         text-decoration: none;
         text-transform:uppercase;
-        color:darkslategrey;
+        color:$bgDarkColor;
         font-size: .7rem;
         font-weight:700;
         margin-right:1rem;
         }
         a:active, a.active, a:hover{
-        color:cornflowerblue;
-        border-bottom:5px solid cornflowerblue;
+        color:$primaryColor;
+        border-bottom:5px solid $primaryColor;
         padding-bottom:40px;
         }
         a:focus{
-            color:cornflowerblue;
+            color: $primaryColor;
         }
     }
 } 
